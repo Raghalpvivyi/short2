@@ -15,7 +15,7 @@ load_dotenv()
 class PexelsDownloader:
     def __init__(self, api_key=None):
         self.api_key = api_key or os.getenv("PEXELS_API_KEY")
-        self.base_url = "https://api.pexels.com/videos"
+        self.base_url = "https://pixabay.com/api/videos/"
         
         if not self.api_key:
             print("[تحذير] لم يتم العثور على مفتاح PEXELS_API_KEY في البيئة.")
